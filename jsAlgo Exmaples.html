@@ -1,0 +1,56 @@
+<script type="text/javascript" src="jslib.js"></script>
+
+<!---------------------------------------STRING obj-------------------------->
+<script type="text/javascript"  >
+document.write("<h1>STRING obj</h1>");
+
+//remove all (t) in string
+document.write( STRING.remove.Char("to be or notttttttttt to be","t"));
+document.write("<br  />");
+
+//remove just first  (t) in string
+document.write(  STRING.remove.Char("to be t or not  to be","t","f")  );
+document.write("<br />");
+
+//to prevent interpretaion of metahcecters x: ( [ . use (\\) before it ex (==>\\(
+document.write(   STRING.remove.Char("test()","\\(\\)")  );
+document.write("<br />");
+
+</script>
+<!--------------------------------------------------------------------------------->
+
+
+<!---------------------------------------WINDOW OBJ-------------------------->
+<script type="text/javascript" >
+//move the elment that have a window id according to mouse position when uset move the mouse
+WINDOW.move('window',"mousemove");
+</script>
+<div id='window' style="width:200px;height:100px;background-color:#00C"></div>
+<!--------------------------------------------------------------------------------->
+
+
+<!------------------------------HTMLELEMENT------------------------------------------->
+<script type="text/jscript">
+document.write("<hr /><h1>HTMLELEMENT</h1>");
+//ex1: create a H1 tag inside  the divTest elment put(the killer)text inside it
+HTMLELEMENT.create("h1","divTest","the killer",'NewElment');
+
+//ex2:CREATE A div elment inside the divTest and put the htmlCode cotent inside it
+htmlCode = '<div id="divTest"  style="width:50px;height:50px;background-color:green">A</div>'
+HTMLELEMENT.create("div","divTest",htmlCode,'Container');
+
+//ex2 if the 5th elment ahs been set to true theelment will be inserteberfore the target elment
+HTMLELEMENT.create("div","divTest","before the div TEest elment",'Container',true);
+
+</script>
+<div id='divTest'  style="width:200px;height:100px;background-color:red"></div>
+<!--------------------------------------------------------------------------------->
+
+
+
+<!-------------------------------------math--------------------------------------------------------->
+<script>
+document.write( math.roundNumber(1.2556,3) );
+</script>
+
+<!------------------------------------------------------------------------------------------------------>
