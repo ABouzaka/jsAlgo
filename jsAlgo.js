@@ -1,4 +1,4 @@
-
+//a ne line has bee nadded by ahmed
 ///////////////////////////////////////////////WINDOW  obj///////////////////////////////////////////////////////////////////////////
 WINDOW ={};
 /**************this method  will trigger the 	MovemovieWindow function**************************/	  
